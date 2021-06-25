@@ -1,0 +1,32 @@
+{
+  "name": "ablog",
+  "version": "1.0.0",
+  "description": "Yet another VuePress blog plugin demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "dev": "vuepress dev src",
+    "build": "vuepress build --no-cache src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daggerok/ablog.git"
+  },
+  "keywords": [],
+  "author": "Maksim Kostromin <daggerok@gmail.com> (https://github.com/daggerok)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daggerok/ablog/issues"
+  },
+  "homepage": "https://github.com/daggerok/ablog#readme",
+  "dependencies": {
+    "@mr-hope/vuepress-types": "1.18.2",
+    "@types/node": "15.12.4",
+    "@vuepress/plugin-back-to-top": "1.8.2",
+    "@vuepress/plugin-blog": "1.9.4",
+    "@vuepress/plugin-last-updated": "1.8.2",
+    "@vuepress/plugin-medium-zoom": "1.8.2",
+    "vuepress": "1.8.2"
+  }
+}
