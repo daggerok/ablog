@@ -23,7 +23,7 @@
   "homepage": "https://github.com/daggerok/ablog#readme",
   "dependencies": {
     "@mr-hope/vuepress-types": "1.18.2",
-    "@types/node": "15.12.4",
+    "@types/node": "15.12.5",
     "@vuepress/plugin-back-to-top": "1.8.2",
     "@vuepress/plugin-blog": "1.9.4",
     "@vuepress/plugin-last-updated": "1.8.2",
