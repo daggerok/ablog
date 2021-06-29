@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run dev",
     "dev": "vuepress dev src",
-    "build": "vuepress build --no-cache src"
+    "build": "vuepress build --no-cache src",
+    "github-pages": "cross-env BASE='/ablog/' npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "@vuepress/plugin-blog": "1.9.4",
     "@vuepress/plugin-last-updated": "1.8.2",
     "@vuepress/plugin-medium-zoom": "1.8.2",
+    "cross-env": "7.0.3",
     "moment": "2.29.1",
     "vuepress": "1.8.2"
   }
