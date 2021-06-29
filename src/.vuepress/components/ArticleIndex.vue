@@ -27,14 +27,14 @@ export default {
   computed: {
     articles() {
       const pathStartsWithArticles = page => page.path.startsWith('/articles/') && !page.frontmatter.article_index;
-      const byPageDate = (page1, page2) => {
-        if (page1.frontmatter.date > page2.frontmatter.date) return 1;
-        if (page1.frontmatter.date < page2.frontmatter.date) return -1;
+      const byPagePath = (page1, page2) => {
+        if (page1.path > page2.path) return 1;
+        if (page1.path < page2.path) return -1;
         return 0;
       }
       return this.$site.pages
                  .filter(pathStartsWithArticles)
-                 .sort(byPageDate)
+                 .sort(byPagePath)
                  .reverse();
     }
   },
