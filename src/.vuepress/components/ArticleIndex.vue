@@ -31,12 +31,12 @@ export default {
         if (page1.path > page2.path) return 1;
         if (page1.path < page2.path) return -1;
         return 0;
-      }
+      };
       return this.$site.pages
-                 .filter(pathStartsWithArticles)
-                 .sort(byPagePath)
-                 .reverse();
-    }
+          .filter(pathStartsWithArticles)
+          .sort(byPagePath)
+          .reverse();
+    },
   },
 };
 </script>
