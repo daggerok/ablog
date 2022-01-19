@@ -1,11 +1,11 @@
 <template>
   <div>
     <div v-for="article in articles">
-      <h3>
+      <h2>
         <router-link :to="article.path">
           {{ article.frontmatter.title || article.title }}
         </router-link>
-      </h3>
+      </h2>
       <p>{{ article.frontmatter.description  || article.description }}</p>
     </div>
   </div>
