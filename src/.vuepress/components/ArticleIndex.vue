@@ -29,8 +29,9 @@ export default {
       const pathStartsWithArticles = page =>
           page.regularPath.startsWith('/articles/') && !page.frontmatter.article_index;
       const byPagePath = (page1, page2) => {
-        if (page1.regularPath < page2.regularPath) return -1;
-        if (page1.regularPath > page2.regularPath) return 1;
+        if (page1.path === page2.path) return 0;
+        if (page1.path > page2.path) return 1;
+        if (page1.path < page2.path) return -1;
         return 0;
       };
       return this.$site.pages
