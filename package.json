@@ -14,7 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/daggerok/ablog.git"
   },
-  "keywords": [],
+  "keywords": [
+    "vuepress",
+    "@vuepress",
+    "@vuepress/theme-default"
+  ],
   "author": "Maksim Kostromin <daggerok@gmail.com> (https://github.com/daggerok)",
   "license": "MIT",
   "bugs": {
@@ -22,12 +26,12 @@
   },
   "homepage": "https://github.com/daggerok/ablog#readme",
   "dependencies": {
-    "@mr-hope/vuepress-types": "1.21.0",
+    "@mr-hope/vuepress-types": "1.24.0",
     "@types/node": "17.0.10",
     "@vuepress/plugin-back-to-top": "1.9.7",
-    "@vuepress/plugin-blog": "1.9.4",
     "@vuepress/plugin-last-updated": "1.9.7",
     "@vuepress/plugin-medium-zoom": "1.9.7",
+    "@vuepress/theme-default": "1.9.7",
     "cross-env": "7.0.3",
     "moment": "2.29.1",
     "vuepress": "1.9.7"
