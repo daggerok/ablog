@@ -1,4 +1,5 @@
 ---
+layout: FooterredLayout
 article_index: true
 title: Articles
 
@@ -12,4 +13,3 @@ and posting them here. I hope they are
 interesting, or better yet helpful, to you.
 
 <ArticleIndex />
-

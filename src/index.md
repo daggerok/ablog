@@ -1,4 +1,5 @@
 ---
+layout: FooterredLayout
 title: Maksim Kostromin
 description: I'm doing software engineering, love and peace...
 
