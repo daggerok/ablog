@@ -3,6 +3,7 @@
     <div class="layout-with-footer__parent-layout-content">
       <ParentLayout/>
     </div>
+    <Tags />
     <footer class="layout-with-footer__footer-content">
       Copyright © 2022-present <strong>MIT</strong> | <a href="https://github.com/daggerok/ablog">Maksim Kostromin</a>
     </footer>
@@ -11,12 +12,18 @@
 
 <script>
 import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue';
+import Tags from './Tags.vue';
 
+console.log('Initialize Tags component');
 export default {
   name: 'FooterredLayout',
   components: {
     ParentLayout,
+    Tags,
   },
+  mounted() {
+    console.log('Mount Tags component');
+  }
 };
 </script>
 
