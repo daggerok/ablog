@@ -1,6 +1,6 @@
 <template>
   <div class="tags">
-    <h3 class="tags__title" @click="toggle">Tags</h3>
+    <p class="tags__title" @click="toggle">Tags</p>
     <ul class="tags__list" v-for="tag in tags" v-if="enabled">
       <li>{{ tag }}</li>
     </ul>
@@ -30,6 +30,9 @@ export default {
   position absolute
   top 4rem
   right 1.5rem
+
+.tags__title
+  font-weight 500
 
 .tags__list
   list-style-type none
