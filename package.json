@@ -1,7 +1,7 @@
 {
   "name": "ablog",
   "version": "1.0.0",
-  "description": "Yet another VuePress blog plugin demo with support of custom Layout and Tags",
+  "description": "Yet another VuePress blog plugin demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

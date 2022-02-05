@@ -1,12 +1,12 @@
 <template>
   <div>
     <div v-for="article in articles">
-      <h2>
+      <h3>
         <router-link :to="article.path">
           {{ article.frontmatter.title || article.title }}
         </router-link>
-      </h2>
-      <p>{{ article.frontmatter.description }}</p>
+      </h3>
+      <p>{{ article.frontmatter.description  || article.description }}</p>
     </div>
   </div>
 </template>
@@ -29,8 +29,8 @@ export default {
       const pathStartsWithArticles = page =>
           page.regularPath.startsWith('/articles/') && !page.frontmatter.article_index;
       const byPagePath = (page1, page2) => {
-        if (page1.regularPath < page2.regularPath) return -1;
         if (page1.regularPath > page2.regularPath) return 1;
+        if (page1.regularPath < page2.regularPath) return -1;
         return 0;
       };
       return this.$site.pages
