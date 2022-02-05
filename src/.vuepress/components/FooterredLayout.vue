@@ -14,16 +14,12 @@
 import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue';
 import Tags from './Tags.vue';
 
-console.log('Initialize Tags component');
 export default {
   name: 'FooterredLayout',
   components: {
     ParentLayout,
     Tags,
   },
-  mounted() {
-    console.log('Mount Tags component');
-  }
 };
 </script>
 
